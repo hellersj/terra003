@@ -1,0 +1,53 @@
+Pasos para subir un archivo o cambio a repo github
+
+# Menú → File → Open Folder → selecciona tu carpeta
+
+ #Abre la terminal integrada en VS Code (Ctrl + ñ o Ctrl + J y luego selecciona terminal).
+
+    git init
+
+# Verifica el remoto (el enlace de tu repo GitHub):
+
+        git remote add origin https://github.com/hellersj/tf003.git
+
+# Si ya existe y quieres actualizarlo:
+
+    git remote set-url origin https://github.com/hellersj/tf003.git
+
+# Agrega tu archivo:
+
+    git add test.txt
+
+# Haz un commit con mensaje:
+
+    git commit -m "Agrego archivo test.txt"
+
+# Sube el commit a GitHub (rama main):
+
+    git branch -M main
+    git push -u origin main
+
+# Desde VS Code también puedes hacerlo con la interfaz gráfica:
+
+En la barra lateral izquierda, haz clic en el icono de Source Control (Control de código fuente).
+Verás test.txt como archivo modificado → haz clic en el + para Stage.
+Escribe un mensaje en el campo de commit y presiona el ✔️.
+Luego, en la parte superior, dale clic en “Publish Branch” o “Push”.
+
+PS C:\Users\HellerEliezerSaenzJa\Documents\2025\Heller\tf-003\comandos_tf> az account show
+{
+  "environmentName": "AzureCloud",
+  "homeTenantId": "fcf67057-50c9-4ad4-98f3-ffca64add9e9",
+  "id": "3c686e8e-b47e-456a-905d-d226cf5cb45e",
+  "isDefault": true,
+  "managedByTenants": [],
+  "name": "Azure subscription 1",
+  "state": "Enabled",
+  "tenantDefaultDomain": "ibm.onmicrosoft.com",
+  "tenantDisplayName": "IBM",
+  "tenantId": "fcf67057-50c9-4ad4-98f3-ffca64add9e9",
+  "user": {
+    "name": "Heller.Saenz@ibm.com",
+    "type": "user"
+  }
+}
