@@ -63,4 +63,4 @@ In other words:
 
 [*] = a bag of IPs.
 
-zipmap = a labeled dictionary that tells you which IP belongs to which name.
+zipmap = a labeled dictionary that tells you which IP belongs to which name
