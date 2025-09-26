@@ -1,6 +1,6 @@
 resource "azurerm_resource_group" "example" {
   name     = "with-dynamic-block-RG"
-  location = "southindia"
+  location = "eastus"
 }
 
 # Dynamically create the Network Security Group
